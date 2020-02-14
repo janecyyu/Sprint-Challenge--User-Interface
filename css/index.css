@@ -71,6 +71,54 @@ p {
     margin: 0 auto;
 }
 
+header {
+    /* background-color: aquamarine; */
+    height: 100px;
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .nav {
+    /* background-color: gray; */
+    height: 80px;
+    width: 16%;
+    text-align: center;
+    height:40px; 
+    line-height:40px; 
+    width:100px; 
+    overflow:hidden;
+
+}
+
+header .logo_nav {
+    height: 50%;
+    /* border: 1px solid blue; */
+}
+
+#logo {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.banner {
+    height: 150px;
+    width: 100%;
+    margin-bottom: 30px;
+    background-image: url(../img/jumbo.jpg);
+}
+
+.banner_about{
+    height: 150px;
+    width: 100%;
+    margin-bottom: 30px;
+    background-image: url(../img/jumbo-about.png);
+}
+
+
+
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -84,6 +132,44 @@ p {
     padding: 0 1%;
     padding-bottom: 20px;  
 }
+
+.about-text-container {
+    width: 100%;
+    padding: 0 1%;
+    padding-bottom: 20px;  
+}
+
+.content-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
+
+}
+
+.content-row .content-box {
+    padding-bottom: 15px;
+    border-bottom: 1px dotted black;
+    height: 95%;
+    width: 48.5%;
+    box-sizing: border-box;
+}
+
+.content-row .content-box button {
+    border-radius: 5px;
+    text-align: center;
+    height: 30px;
+    padding: 5px;
+    width: 85px;
+    margin: 10px 0;
+}
+
+.content-row .content-box h3 {
+    margin-top: 5px;
+}
+
+
+
 
 .middle-content {
     margin-bottom: 20px;
@@ -104,13 +190,46 @@ p {
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
-    background: black;
+    /* background: black; */
     margin: 20px 2.5%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+.middle-content .boxes #box1 {
+    background-color: teal;
+}
+.middle-content .boxes #box2 {
+    background-color: gold;
+}
+.middle-content .boxes #box3 {
+    background-color: cadetblue;
+}
+.middle-content .boxes #box4 {
+    background-color: coral;
+}
+.middle-content .boxes #box5 {
+    background-color: crimson;
+}
+.middle-content .boxes #box6 {
+    background-color: forestgreen;
+}
+.middle-content .boxes #box7 {
+    background-color: darkorchid;
+}
+.middle-content .boxes #box8 {
+    background-color: hotpink;
+}
+.middle-content .boxes #box9 {
+    background-color: indigo;
+}
+.middle-content .boxes #box10 {
+    background-color: dodgerblue;
+}
+
+
 
 .bottom-content {
     display: flex;
@@ -124,6 +243,12 @@ p {
 
 .bottom-content .text-container:last-child {
     padding-right: 0;
+}
+
+.bottom-content .about-bottom-container {
+    width: 100%;
+    padding: 0 1%;
+    padding-bottom: 20px;  
 }
 
 footer {
