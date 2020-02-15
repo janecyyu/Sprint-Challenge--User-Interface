@@ -71,6 +71,148 @@ p {
     margin: 0 auto;
 }
 
+header {
+    /* background-color: aquamarine; */
+    /* height: 100px; */
+    width: 100%;
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+}
+
+header .nav {
+    /* background-color: gray; */
+    height: 80px;
+    width: 16%;
+    text-align: center;
+    height:40px; 
+    line-height:40px; 
+    width:100px; 
+    overflow:hidden;
+
+}
+
+header .nav a {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.1s;
+    transition-duration: 0.1s;
+}
+
+header .nav a:hover {
+    /* background-color:red; */
+    transform: skew(10deg);
+}
+
+header .logo_nav {
+    height: 50%;
+    /* border: 1px solid blue; */
+}
+
+#logo {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.banner {
+    height: 150px;
+    width: 100%;
+    margin-bottom: 30px;
+    background-image: url(../img/jumbo.jpg);
+}
+
+.banner_about{
+    height: 150px;
+    width: 100%;
+    margin-bottom: 30px;
+    background-image: url(../img/jumbo-about.png);
+}
+
+.contact_banner {
+    height: 150px;
+    width: 100%;
+    margin-bottom: 30px;
+    background-image: url("https://cdn.pixabay.com/photo/2018/03/01/14/48/woman-3190829_1280.jpg");
+}
+
+.contact_title h1{
+    margin-top: 65px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.contact_container {
+    /* height: 400px; */
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px 0;
+}
+
+.contact_container .ask {
+    /* height: 380px; */
+    width: 49.5%;
+    background-color: #fff;
+    border: 1px solid black;
+    margin: 10px;
+    text-align: center;
+    padding: 15px;
+}
+
+.contact_container .ask:hover {
+    background-color: rgb(235, 255, 204);
+}
+
+
+
+.contact_container .ask h2 {
+    font-size: 30px;
+}
+
+.contact_container .ask button{
+    margin: 12px;
+}
+
+.contact_form {
+    margin: 50px;
+}
+.contact_form h2{
+    color: rgb(100, 108, 123);
+    font-size: 38px;
+    text-align: left;
+}
+
+.contact_form form .form_orginize {
+    margin: 20px 0;
+}
+
+#email, #name, #msg{
+    width: 100%;
+}
+
+.contact_form form .form_orginize #msg {
+    height: 100px;
+}
+
+@media screen and (max-width: 768px) {
+    .top-content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -85,6 +227,44 @@ p {
     padding-bottom: 20px;  
 }
 
+.about-text-container {
+    width: 100%;
+    padding: 0 1%;
+    padding-bottom: 20px;  
+}
+
+.content-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
+
+}
+
+.content-row .content-box {
+    padding-bottom: 15px;
+    border-bottom: 1px dotted black;
+    height: 95%;
+    width: 48.5%;
+    box-sizing: border-box;
+}
+
+.content-row .content-box button {
+    border-radius: 5px;
+    text-align: center;
+    height: 30px;
+    padding: 5px;
+    width: 85px;
+    margin: 10px 0;
+}
+
+.content-row .content-box h3 {
+    margin-top: 5px;
+}
+
+
+
+
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
@@ -95,6 +275,7 @@ p {
     margin-bottom: 0;
 }
 
+
 .middle-content .boxes {
     display: flex;
     flex-wrap: wrap;
@@ -104,13 +285,46 @@ p {
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
-    background: black;
+    /* background: black; */
     margin: 20px 2.5%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+.middle-content .boxes #box1 {
+    background-color: teal;
+}
+.middle-content .boxes #box2 {
+    background-color: gold;
+}
+.middle-content .boxes #box3 {
+    background-color: cadetblue;
+}
+.middle-content .boxes #box4 {
+    background-color: coral;
+}
+.middle-content .boxes #box5 {
+    background-color: crimson;
+}
+.middle-content .boxes #box6 {
+    background-color: forestgreen;
+}
+.middle-content .boxes #box7 {
+    background-color: darkorchid;
+}
+.middle-content .boxes #box8 {
+    background-color: hotpink;
+}
+.middle-content .boxes #box9 {
+    background-color: indigo;
+}
+.middle-content .boxes #box10 {
+    background-color: dodgerblue;
+}
+
+
 
 .bottom-content {
     display: flex;
@@ -124,6 +338,12 @@ p {
 
 .bottom-content .text-container:last-child {
     padding-right: 0;
+}
+
+.bottom-content .about-bottom-container {
+    width: 100%;
+    padding: 0 1%;
+    padding-bottom: 20px;  
 }
 
 footer {
